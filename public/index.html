@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>UI</title>
+      
+        <link href="styles.css" rel="stylesheet" />
+        <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.x.x/dist/alpine.js" defer></script>
+          
+        <script src="index.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+      </head>
+<body>
+    <!--------------- ==================================== --------------->
+  <!------------------- Main Layout with Containers--------------------->
+  <!--------------- ==================================== --------------->
+  <div data-layout="p1">
+    <div data-container="p1c1_sidebar">
+        <div data-container="p1c1_container">
+            <header data-header="p1c1_header">
+              <img src="./image/logo.svg" />
+              <h1 data-heading="p1c1h1_title" data-translate="dashboardTitle">betaCRM</h1>
+            </header>
+          </div>
+    
+          <!--------------- ==================================== -------------------------->
+          <!------------------------Navigation and container 2----------------------------->
+          <!--------------- ==================================== -------------------------->
+    
+          <nav data-navigation="p1c2w1_sidebar-nav" x-data="sidebarFun">
+            <ul data-list="p1c2w1l_list">
+              <li data-item="p1c2w1l1_list">
+                <div data-div="p1c2w1l1d1">
+                  <img data-image="p1c2w1l1_dashboard" src="./image/dashboard.svg" alt="Dashboard Icon" />
+                  <button data-button="p1c2w1l1b1_button" data-translate="dashboardBtn">Dashboard</button>
+                </div>
+    
+              </li>
+              <li data-item="p1c2w1l1_list">
+                <div data-div="p1c2w1l1d1">
+                  <img data-image="p1c2w1l2_record" src="./image/record.svg" alt="Records Icon" />
+                  <button data-button="p1c2w1l2b2_button"@click="recordBtn(); isClicked=true;" data-translate="productBtn">Records</button>
+                </div>
+
+              </li>
+              <li data-item="p1c2w1l1_list">
+                <div data-div="p1c2w1l1d1">
+                  <img data-image="p1c2w1l3_records" src="./image/record.svg" alt="Records Icon" />
+                  <button data-button="p1c2w1l3b3_button" @click="recordsBtn(); isClicked=true;" data-translate="customerBtn">Records(all)</button>
+                </div>
+    
+              </li>
+              <li data-item="p1c2w1l1_list">
+                <div data-div="p1c2w1l1d1">
+                  <img data-image="p1c2w1l3_income" src="./image/customer.svg" alt="customer Icon" />
+                  <button data-button="p1c2w1l3b4_button" @click="incomeBtn();isClicked=true;" data-translate="customerBtn">customer</button>
+                </div>
+    
+        
+              </li>
+              <li data-item="p1c2w1l1_list">
+                <div data-div="p1c2w1l1d1">
+                  <img data-image="p1c2w1l4_promote" src="./image/report.svg" alt="Reports Icon" />
+                  <button data-button="p1c2w1l4b5_button" @click="reportsBtn(); isClicked=true;" data-translate="reportsBtn">Reports</button>
+                </div>
+    
+        
+              </li>
+             
+            </ul>
+          </nav>
+          <div data-widget="sidebar_widget">
+            <img  src="./image/user.svg"/>
+            <h2>John Dean</h2>
+          </div>
+    </div>
+      <!--------------- ==================================== --------------->
+  <!------------------- Page 1 conatainers--------------------->
+  <!--------------- ==================================== --------------->
+     <div data-container="p1c1_container">
+
+    </div>
+    <div data-container="p1c2_container">
+
+    </div>
+    <div data-container="p1c3_container">
+
+    </div>
+   
+  </div>
+</body>
+</html>

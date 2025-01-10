@@ -1,0 +1,105 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  /* ---========================--- */
+/* ---P1: Page 1 SIDEBAR ---- */
+/* ---========================--- */
+
+[data-layout="p1"] {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    background-color: #8181A5;
+    @apply gap-24 h-screen;
+   
+  }
+  [data-container="p1c1_sidebar"] {
+
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    width: 242px;
+
+    @apply bg-white  min-h-screen;
+  }
+  
+  [data-header="p1c1_header"] {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @apply gap-3;
+  }
+  
+  [data-header="p1c1_header"] img {
+    width: 30px;
+    height: 30px;
+  }
+  
+  [data-heading="p1c1h1_title"] {
+    color: #5E81F4;
+    width: 91px;
+    height: 15px;
+    @apply  font-semibold text-[16px];
+  }
+/* ---========================--- */
+/* ---Navigation ---------------- */
+/* ---========================--- */
+
+[data-navigation="p1c2w1_sidebar-nav"] {
+    background-color: white;
+    @apply  ml-14 mt-8;
+  }
+  
+  [data-list="p1c2w1l_list"] {
+    list-style: none;
+  
+    @apply flex flex-col gap-5;
+  }
+  
+  [data-item="p1c2w1l1_list"] {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  [data-image="p1c2w1l1i1"] {
+    @apply w-[16px] h-[16px];
+  }
+  [data-div="p1c2w1l1d1"] {
+    @apply flex gap-4;
+  }
+  [data-item="p1c2w1l1_list"] img {
+    width: 22px;
+    height: 22px;
+  }
+  
+  [data-item="p1c2w1l1_list"] button {
+    color: #9197b3;
+    line-height: 1;
+    @apply   text-[14px];
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+  }
+  [ data-widget="sidebar_widget"]{
+    height: 64px;
+   width: 242px;
+    @apply flex  gap-3;
+  }
+  [ data-widget="sidebar_widget"] img {
+    height: 30px;
+    width: 30px;
+@apply ml-14;
+}
+  [ data-widget="sidebar_widget"] h2 {
+    @apply font-bold text-[14px];
+    color: #8181A5;
+  }
+ 
+ 
+  
+  /* ---========================--- */
+/* ---P1: Page 1 Contents ---- */
+/* ---========================--- */
+
