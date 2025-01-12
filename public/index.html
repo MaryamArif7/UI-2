@@ -35,31 +35,28 @@
           <li data-item="p1c2w1l1_list">
             <div data-div="p1c2w1l1d1">
               <img data-image="p1c2w1l1_dashboard" src="./image/dashboard.svg" alt="Dashboard Icon" />
-              <button data-button="p1c2w1l1b1_button" data-translate="dashboardBtn">Dashboard</button>
+              <a href="#" onclick="showPage('dashboard')">Dashboard</a>
             </div>
 
           </li>
           <li data-item="p1c2w1l1_list">
             <div data-div="p1c2w1l1d1">
               <img data-image="p1c2w1l2_record" src="./image/record.svg" alt="Records Icon" />
-              <button data-button="p1c2w1l2b2_button" @click="recordBtn(); isClicked=true;"
-                data-translate="productBtn">Records</button>
+              <a href="#" onclick="showPage('Record')">Records</a>
             </div>
 
           </li>
           <li data-item="p1c2w1l1_list">
             <div data-div="p1c2w1l1d1">
               <img data-image="p1c2w1l3_records" src="./image/record.svg" alt="Records Icon" />
-              <button data-button="p1c2w1l3b3_button" @click="recordsBtn(); isClicked=true;"
-                data-translate="customerBtn">Records(all)</button>
+              <a href="#" onclick="showPage('Records')">Records(all)</a>
             </div>
 
           </li>
           <li data-item="p1c2w1l1_list">
             <div data-div="p1c2w1l1d1">
               <img data-image="p1c2w1l3_income" src="./image/customer.svg" alt="customer Icon" />
-              <button data-button="p1c2w1l3b4_button" @click="incomeBtn();isClicked=true;"
-                data-translate="customerBtn">customer</button>
+              <a href="#" onclick="showPage('Customers')">Customers</a>
             </div>
 
 
@@ -67,8 +64,7 @@
           <li data-item="p1c2w1l1_list">
             <div data-div="p1c2w1l1d1">
               <img data-image="p1c2w1l4_promote" src="./image/report.svg" alt="Reports Icon" />
-              <button data-button="p1c2w1l4b5_button" @click="reportsBtn(); isClicked=true;"
-                data-translate="reportsBtn">Reports</button>
+              <a href="#" onclick="showPage('Reports')">Reports</a>
             </div>
 
 
@@ -81,107 +77,260 @@
         <h2>John Dean</h2>
       </div>
     </div>
-    <!--------------- ==================================== --------------->
-    <!------------------- Page 1 conatainers--------------------->
-    <!--------------- ==================================== --------------->
-    <main data-layout="main-container">
-      <div data-container="p1mw1_widget">
-        <p>Welcome,<span>Admin Agent !!!</span></p>
-        <p>Shunya Net Zero AI Servers Pvt Ltd</p>
-      </div>
-      <div data-container="p1mw2_widget">
-        <div data-grid="p1mw2g1_grid">
-          <div data-div="p1mw2g1d1_div">
-            <h1> Todo List</h1>
-            <h1>List</h1>
-          </div>
-          <div data-div="p1mw2g1d2_div">
-            <h1> Tasks</h1>
-            <h1>Actions</h1>
-          </div>
-          <div data-div="p1mw2d3_div">
-            <div data-task="p1mw2t1_task">
-               <img src="./image/task1.svg" /> 
-            <p>Task 1:Review All the Tasks</p>
-            </div>
-            <div data-action="p1mw2a1">
-             <img  src="./image/create.svg"/>
-             <img  src="./image/del.svg"/>
-            </div>
-          </div>
-          <div data-div="p1mw2d3_div">
-            <div data-task="p1mw2t1_task">
-               <img src="./image/task2.svg" /> 
-               <p>Task 2:Create New Record with the attachment</p>
-            </div>
-            <div data-action="p1mw2a1">
-             <img  src="./image/create.svg"/>
-             <img  src="./image/del.svg"/>
-            </div>
-          </div>
-          <div data-div="p1mw2d3_div">
-            <div data-task="p1mw2t1_task">
-               <img src="./image/task3.svg" /> 
-            <p>Task 3:Reply to all the resppodents</p>
-            </div>
-            <div data-action="p1mw2a1">
-             <img  src="./image/create.svg"/>
-             <img  src="./image/del.svg"/>
-            </div>
-          </div>
-          <div data-div="p1mw2d4_div">
-            <input  type="text" placeholder="Enter a Task"/>
-           <button > Add Task</button>
-          </div>
-        </div>
-        <div data-grid="p1mw2g1_grid"> 
-       Exchnage Rate
-        <div  data-div="p1mw2g2d1_div" >
-          <div data-div="p1mw2g2d2_div">
-           <div data-div="p1mw2g2d1ex1_exchnage">
-            <input type="number" placeholder="10" />
-            <select>
-             <option value="AED"> <img src="./image/uae.svg"/>AED</option>
-             <option value="USD" selected> USD</option>
-             <option value="EUR"> EUR</option>
-           </select>
-           </div>
-           <div data-div="p1mw2g2d1ex1_exchnage">
-            <input type="number" placeholder="2.72" />
-            <select>
-             <option value="AED"> <img src="./image/uae.svg"/>AED</option>
-             <option value="USD" selected> USD</option>
-             <option value="EUR"> EUR</option>
-           </select>
-           </div>
-           <button>Exchnage</button>
-           </div>
-          <div  data-div="p1mw2g2d3_div" >
-           <img src="./image/curr.svg"/>
-           <h2>Know Your currency</h2>
-           <h2>Exchnage rate here</h2>
-          </div>   
-        </div>
-        <div data-div="p1mw2g2d4_div">
-          <h1>World Clock</h1>
-          <select>
-            <option value="Africa"selected>Africa/Abidjan</option>
-            <option value="USD" > USD</option>
-            <option value="EUR"> EUR</option>
-          </select>
-          <h1>Oct 1 Tue 16:46:21</h1>
-        </div>
-        </div>
-        <div data-grid="p1mw2g1_grid"> grid 3</div>
-        <div data-grid="p1mw2g1_grid"> grid 4</div>
-      </div>
 
+    <main data-layout="main-container">
+      <!--------------- ==================================== --------------->
+      <!-------------------  Dashboard Containers--------------------->
+      <!--------------- ==================================== --------------->
+      <div id="dashboard" class="page">
+        <div data-container="p1mw1_widget">
+          <p>Welcome,<span>Admin Agent !!!</span></p>
+          <p>Shunya Net Zero AI Servers Pvt Ltd</p>
+        </div>
+        <div data-container="p1mw2_widget">
+          <div data-grid="p1mw2g1_grid">
+            <div data-div="p1mw2g1d1_div">
+              <h1> Todo List</h1>
+              <h1>List</h1>
+            </div>
+            <div data-div="p1mw2g1d2_div">
+              <h1> Tasks</h1>
+              <h1>Actions</h1>
+            </div>
+            <div data-div="p1mw2d3_div">
+              <div data-task="p1mw2t1_task">
+                <img src="./image/task1.svg" />
+                <p>Task 1:Review All the Tasks</p>
+              </div>
+              <div data-action="p1mw2a1">
+                <img src="./image/create.svg" />
+                <img src="./image/del.svg" />
+              </div>
+            </div>
+            <div data-div="p1mw2d3_div">
+              <div data-task="p1mw2t1_task">
+                <img src="./image/task2.svg" />
+                <p>Task 2:Create New Record with the attachment</p>
+              </div>
+              <div data-action="p1mw2a1">
+                <img src="./image/create.svg" />
+                <img src="./image/del.svg" />
+              </div>
+            </div>
+            <div data-div="p1mw2d3_div">
+              <div data-task="p1mw2t1_task">
+                <img src="./image/task3.svg" />
+                <p>Task 3:Reply to all the resppodents</p>
+              </div>
+              <div data-action="p1mw2a1">
+                <img src="./image/create.svg" />
+                <img src="./image/del.svg" />
+              </div>
+            </div>
+            <div data-div="p1mw2d4_div">
+              <input type="text" placeholder="Enter a Task" />
+              <button> Add Task</button>
+            </div>
+          </div>
+          <div data-grid="p1mw2g1_grid">
+            Exchnage Rate
+            <div data-div="p1mw2g2d1_div">
+              <div data-div="p1mw2g2d2_div">
+                <div data-div="p1mw2g2d1ex1_exchnage">
+                  <input type="number" placeholder="10" />
+                  <select>
+                    <option value="AED"> <img src="./image/uae.svg" />AED</option>
+                    <option value="USD" selected> USD</option>
+                    <option value="EUR"> EUR</option>
+                  </select>
+                </div>
+                <div data-div="p1mw2g2d1ex1_exchnage">
+                  <input type="number" placeholder="2.72" />
+                  <select>
+                    <option value="AED"> <img src="./image/uae.svg" />AED</option>
+                    <option value="USD" selected> USD</option>
+                    <option value="EUR"> EUR</option>
+                  </select>
+                </div>
+                <button>Exchnage</button>
+              </div>
+              <div data-div="p1mw2g2d3_div">
+                <img src="./image/curr.svg" />
+                <h2>Know Your currency</h2>
+                <h2>Exchnage rate here</h2>
+              </div>
+            </div>
+            <div data-div="p1mw2g2d4_div">
+              <h1>World Clock</h1>
+              <select>
+                <option value="Africa" selected>Africa/Abidjan</option>
+                <option value="USD"> USD</option>
+                <option value="EUR"> EUR</option>
+              </select>
+              <h1>Oct 1 Tue 16:46:21</h1>
+            </div>
+          </div>
+          <div data-grid="p1mw2g1_grid">
+            <div data-div="p1mw2g3d1_div">
+              <h1>Your bookmarked Records</h1>
+              <h1>List</h1>
+            </div>
+
+            <table>
+              <thead>
+
+                <tr>
+                  <th>Customer Name </th>
+                  <th>Ticket Name </th>
+                  <th>Subject </th>
+                  <th>Status </th>
+                </tr>
+
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    Sallie Wdie
+                  </td>
+                  <td>
+                    CTICKET001
+                  </td>
+                  <td>What to look for</td>
+                  <td>Status</td>
+                </tr>
+                <tr>
+                  <td>
+                    Sallie Wdie
+                  </td>
+                  <td>
+                    CTICKET001
+                  </td>
+                  <td>What to look for</td>
+                  <td>Status</td>
+                </tr>
+                <tr>
+                  <td>
+                    Sallie Wdie
+                  </td>
+                  <td>
+                    CTICKET001
+                  </td>
+                  <td>What to look for</td>
+                  <td>Status</td>
+                </tr>
+                <tr>
+                  <td>
+                    Sallie Wdie
+                  </td>
+                  <td>
+                    CTICKET001
+                  </td>
+                  <td>What to look for</td>
+                  <td>Status</td>
+                </tr>
+              </tbody>
+
+            </table>
+          </div>
+          <div data-grid="p1mw2g1_grid">
+            <div data-div="p1mw2g3d1_div">
+              <h1>Your overview for today</h1>
+              <h1>List</h1>
+            </div>
+            <table>
+              <thead>
+                <tr>
+                  <th>Type</th>
+                  <th></th>
+                  <th>Count</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><img src="./image/table.svg" alt="Icon for New Records" /></td>
+                  <td> New Records</td>
+                  <td>0</td>
+                </tr>
+                <tr>
+                  <td><img src="./image/table.svg" alt="Icon for Active Records" /> </td>
+                  <td>Active Records</td>
+                  <td>5</td>
+                </tr>
+                <tr>
+                  <td><img src="./image/table.svg" alt="Icon for Closed Records" /> </td>
+                  <td>Closed Records</td>
+                  <td>8</td>
+                </tr>
+                <tr>
+                  <td><img src="./image/table2.svg" alt="Icon for Responses" /></td>
+                  <td>Responses</td>
+                  <td>0</td>
+                </tr>
+                <tr>
+                  <td><img src="./image/table2.svg" alt="Icon for Interaction" /> </td>
+                  <td>Interaction</td>
+                  <td>0</td>
+                </tr>
+              </tbody>
+            </table>
+
+          </div>
+        </div>
+      </div>
+      <!--------------- ==================================== --------------->
+      <!------------------- Record conatainers--------------------->
+      <!--------------- ==================================== --------------->
+      <div id="Record" class="page hidden">
+        <div data-div="p1_record">
+          <div data-div="p1c1record_container">
+            <h1>Records</h1>
+            <h1> Shunya Net Zero AI Servers Pvt Ltd</h1>
+          </div>
+          <div data-div="p1c2record_container">
+            <div data-div="p1c3record_container">
+              <button>Add Record</button>
+              <div data-div="p1c4record_container">
+                <h4>SORT</h4>
+                <select>
+                  <option value="customer" selected>Customer</option>
+                  <option value="Ticket Name">Ticket Name</option>
+                  <option value="Status">Status</option>
+                </select>
+              </div>
+            </div>
+            <table>
+              <thead>
+                <tr>
+                  <th>Customer Name</th>
+                  <th>Customer  Name</th>
+                  <th>Customer Name</th>
+                  <th>Customer Name</th>
+                  <th>Customer Name</th>
+                  <th>Customer Name</th>
+                </tr>
+              </thead>
+            </table>
+          </div>
+        </div>
+
+      </div>
+      <!--------------- ==================================== --------------->
+      <!------------------- Records conatainers--------------------->
+      <!--------------- ==================================== --------------->
+      <div id="Records" class="page hidden"></div>
+      <!--------------- ==================================== --------------->
+      <!------------------- Customers conatainers--------------------->
+      <!--------------- ==================================== --------------->
+      <div id="Customers" class="page hidden"></div>
+      <!--------------- ==================================== --------------->
+      <!------------------- Reports conatainers--------------------->
+      <!--------------- ==================================== --------------->
+      <div id="Reports" class="page hidden"></div>
     </main>
 
 
   </div>
-
-
+  <script src="index.js"></script>
 
 </body>
 

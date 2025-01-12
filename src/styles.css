@@ -75,7 +75,7 @@
     height: 22px;
   }
   
-  [data-item="p1c2w1l1_list"] button {
+  [data-item="p1c2w1l1_list"] a {
     color: #9197b3;
     line-height: 1;
     @apply   text-[14px];
@@ -100,7 +100,7 @@
  
   
   /* ---========================--- */
-/* ---P1: Page 1 Contents ---- */
+/* ---P1: Dashboard Contents ---- */
 /* ---========================--- */
 [data-container="p1mw1_widget"]{
     @apply flex justify-between mt-5 mr-10;
@@ -141,16 +141,18 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
 [ data-div="p1mw2g2d1_div" ]{
   @apply flex;
+}
+  /* ---========================--- */
+/* ---P1: Recoord Contents ---- */
+/* ---========================--- */
+[data-div="p1c1record_container"]{
+  @apply flex justify-between;
+}
+[data-div="p1c3record_container"]{
+  @apply flex justify-between;
+}
+[data-div="p1c4record_container"]{
+  @apply flex justify-between;
 }
