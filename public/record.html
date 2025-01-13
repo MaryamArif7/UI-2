@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Records</title>
+</head>
+<body>
+     <!--------------- ==================================== --------------->
+      <!-------------------Add Record conatainers--------------------->
+      <!--------------- ==================================== --------------->
+      <div>
+         <div>
+            <button>Add Record</button>
+            <div>
+                <h2>SORT</h2>
+                <select>
+                    <option value="customer" selected>Customer</option>
+                    <option value="records">Records</option>
+                </select>
+            </div>
+            <div>
+                <h1>Creating A Record</h1>
+                <form>
+                    <label for="customer"> Select Customer</label>
+                    <select>
+                        <option>Select a customer</option>
+                        <option>Select a Ticket Number</option>
+                    </select>
+                    <br>
+                    <label for="ticket name">Ticket Name</label>
+                    <input type="text" placeholder="Ticket Name">
+                    <br>
+                    <label for="subject"> Subject</label>
+                    <input type="text " placeholder="Subject">
+                    <br>
+                    <label for="Record Details">Record Details</label>
+                    <textarea placeholder="Record Details"></textarea>
+                    <br>
+                    <input type="file" placeholder="Upload your attachment">
+                    <br>
+                    <label for="order">Order Value</label>
+                   <input type="text" placeholder="Order Value">
+                   <label for="customer"> Priority(Customer)</label>
+                   <select > 
+                    <option value="Normla" selected>Normal</option>
+                   </select>
+                    <br>
+                    <label for="Record">Tag A record</label>
+                    <input type="text" placeholder="Enter Tags(separated by comma)">
+                  
+                   <button>Create Record</button>
+                </form>
+            </div>
+         </div>
+      </div>
+</body>
+</html>

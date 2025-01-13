@@ -156,3 +156,39 @@
 [data-div="p1c4record_container"]{
   @apply flex justify-between;
 }
+  /* ---========================--- */
+/* ---P1: Recoords Contents ---- */
+/* ---========================--- */
+[data-div="p1c2records_container"]{
+  @apply flex justify-between;
+}
+[ data-div="p1c3records_container"]{
+  @apply flex;
+}
+ /* ---========================--- */
+/* ---P1:Customer Contents ---- */
+/* ---========================--- */
+[data-div="p1c1customer_container"]{
+  @apply flex justify-between;
+}
+[data-div="p1c2customer_container"]{
+  @apply flex 
+}
+[data-div="p1c3customer_container"]{
+  @apply flex justify-between;
+}
+[data-div="p1c4customer_container"]{
+  @apply flex 
+}
+
+
+
+/* ---========================--- */
+/* ---P2:Customer Contents ---- */
+/* ---========================--- */
+[data-div="p2c2customer_container"]{
+  @apply flex justify-between;
+}
+[data-div="p2c3customer_container"]{
+  @apply flex 
+}

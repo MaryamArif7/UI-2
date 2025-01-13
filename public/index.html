@@ -288,7 +288,10 @@
           </div>
           <div data-div="p1c2record_container">
             <div data-div="p1c3record_container">
-              <button>Add Record</button>
+              <a href="record.html">
+                <button>Add Record</button>
+              </a>
+
               <div data-div="p1c4record_container">
                 <h4>SORT</h4>
                 <select>
@@ -302,13 +305,88 @@
               <thead>
                 <tr>
                   <th>Customer Name</th>
-                  <th>Customer  Name</th>
-                  <th>Customer Name</th>
-                  <th>Customer Name</th>
-                  <th>Customer Name</th>
-                  <th>Customer Name</th>
+                  <th>Ticket  Name</th>
+                  <th>Subject</th>
+                  <th>Status</th>
+                  <th>Record Number</th>
+                  <th>Last Responder</th>
+                  <th>Last Reply Date&Time</th>
                 </tr>
               </thead>
+              <tbody>
+                <tr>
+                  <td>Sallie Wade</td>
+                  <td>CTICKET001</td>
+                  <td>Where To look for</td>
+                  <td><button>Avtive</button></td>
+                  <td>278</td>
+                  <td>Customer</td>
+                  <td>2024-12-12 10:00AM</td>
+                </tr>
+                <tr>
+                  <td>Peter Patterson</td>
+                  <td>No Name Given</td>
+                  <td>Decorate For less With Art</td>
+                  <td><button>New</button></td>
+                  <td>279</td>
+                  <td>Internal Note</td>
+                  <td>2024-12-12 10:00AM</td>
+                </tr>
+                <tr>
+                  <td>Peter Patterson</td>
+                  <td>No Name Given</td>
+                  <td>Decorate For less With Art</td>
+                  <td><button>New</button></td>
+                  <td>123</td>
+                  <td>Internal Note</td>
+                  <td>2024-12-12 10:00AM</td>
+                </tr>
+                <tr>
+                  <td>Sallie Wade</td>
+                  <td>CTICKET002</td>
+                  <td>Where To look for</td>
+                  <td><button>Avtive</button></td>
+                  <td>56</td>
+                  <td>Customer</td>
+                  <td>2024-12-12 10:00AM</td>
+                </tr>
+                <tr>
+                  <td>Sallie Wade</td>
+                  <td>CTICKET003</td>
+                  <td>Where To look for</td>
+                  <td><button>Avtive</button></td>
+                  <td>90</td>
+                  <td>Customer</td>
+                  <td>2024-12-12 10:00AM</td>
+                </tr>
+                <tr>
+                  <td>Sallie Wade</td>
+                  <td>CTICKET005</td>
+                  <td>Where To look for</td>
+                  <td><button>Avtive</button></td>
+                  <td>432</td>
+                  <td>Customer</td>
+                  <td>2024-12-12 10:00AM</td>
+                </tr>
+                <tr>
+                  <td>Sallie Wade</td>
+                  <td>CTICKET006</td>
+                  <td>Where To look for</td>
+                  <td><button>Avtive</button></td>
+                  <td>8</td>
+                  <td>Customer</td>
+                  <td>2024-12-12 10:00AM</td>
+                </tr>
+                <tr>
+                  <td>Sallie Wade</td>
+                  <td>CTICKET007</td>
+                  <td>Where To look for</td>
+                  <td><button>Avtive</button></td>
+                  <td>27</td>
+                  <td>Customer</td>
+                  <td>2024-12-12 10:00AM</td>
+                </tr>
+              </tbody>
             </table>
           </div>
         </div>
@@ -317,11 +395,248 @@
       <!--------------- ==================================== --------------->
       <!------------------- Records conatainers--------------------->
       <!--------------- ==================================== --------------->
-      <div id="Records" class="page hidden"></div>
+      <div id="Records" class="page hidden">
+       <div data-div="p1c1records_container">
+       <div data-div="p1c2records_container">
+        <h1>Search Records </h1>
+        <div data-div="p1c3records_container">
+          <h4>SORT</h4>
+          <select>
+            <option value="Customer" selected>Customer</option>
+          </select>
+        </div>
+       </div>  
+        <form>
+          <label for="customer"> Customer Name</label>
+          <select>
+            <option value="customer">Select Customer</option>
+          </select>
+          <label for="Ticket">Ticket Name</label>
+          <input type="search"placeholder="please Input">
+         <label for="search">Advance Search</label>
+       
+         <button type="button"> OFF ON</button>
+         <br>
+         <label for="Date">Date</label>
+         <input type="date" placeholder="From ">
+         <input type="date" placeholder="To">
+         <label>Tag</label>
+         <select><Option value="tag" selected>Filter by Tag</Option></select>
+         <button>Reset Filters</button>
+        </form>
+        <hr>
+        <table>
+          <thead>
+            <tr>
+              <th>Ticket Name</th>
+              <th>Record Number</th>
+              <th>Customer Name</th>
+              <th>Subject</th>
+              <th>Last Respnder</th>
+              <th>Latest Reply Date & Time</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>No Name Given</td>
+              <td>279</td>
+              <td>Peter Patterson</td>
+              <td>Decorate for less with art</td>
+              <td>Internel Note</td>
+              <td>2024-12-12 10:00AM</td>
+              <td><button>Closed</button></td>
+            </tr>
+            <tr>
+              <td>No Name Given</td>
+              <td>279</td>
+              <td>Peter Patterson</td>
+              <td>Decorate for less with art</td>
+              <td>Internel Note</td>
+              <td>2024-12-12 10:00AM</td>
+              <td><button>Closed</button></td>
+            </tr>
+            <tr>
+              <td>No Name Given</td>
+              <td>279</td>
+              <td>Peter Patterson</td>
+              <td>Decorate for less with art</td>
+              <td>Internel Note</td>
+              <td>2024-12-12 10:00AM</td>
+              <td><button>Closed</button></td>
+            </tr>
+            <tr>
+              <td>No Name Given</td>
+              <td>278</td>
+              <td>Sallie Wade</td>
+              <td>Where to look for</td>
+              <td>Internel Note</td>
+              <td>2024-12-12 10:00AM</td>
+              <td><button>Closed</button></td>
+            </tr>
+            <tr>
+              <td>No Name Given</td>
+              <td>279</td>
+              <td>Peter Patterson</td>
+              <td>Decorate for less with art</td>
+              <td>Internel Note</td>
+              <td>2024-12-12 10:00AM</td>
+              <td><button>Closed</button></td>
+            </tr>
+          </tbody>
+        </table>
+       </div>
+
+
+
+      </div>
       <!--------------- ==================================== --------------->
       <!------------------- Customers conatainers--------------------->
       <!--------------- ==================================== --------------->
-      <div id="Customers" class="page hidden"></div>
+      <div id="Customers" class="page hidden">
+    <!------------------------------------------------
+    <div data-div="p1c1customer_container">
+          <h1>Customers</h1>
+          <div data-div="p1c2customer_container">
+            <h3>Shunya Net Zero AI Server PVt Ltd</h3>
+          </div>
+         </div>
+     <div data-div="p1c3customer_container">
+      <button>Add Customer</button>
+      <div data-div="p1c4customer_container">
+        <h3>SORT</h3>
+        <select>
+          <option  value="customer" selected>CUSTOMER</option>
+        </select>
+      </div>
+     </div>
+        <div data-div="p1c5customer_container">
+          <div data-div="p1c6customer_container">
+            <h4>Back</h4>
+            <h1>Customer Details</h1>
+          </div>
+          <div data-div="p1c7customerform_container">
+            <div data-div="p1c7customerform1_container">
+             <form>
+              <img src=""
+             </form>
+            </div>
+            <div data-div="p1c7customerform2_container">
+
+            </div>
+          </div>
+        </div>
+   -------------------------------------------- ------>  
+   <div data-div="p2c1customer_container">
+  <div data-div="p2c2customer_container">
+  <button>Add Customer</button>
+  <div data-div="p2c3customer_container">
+    <h3>SORT</h3>
+    <select>
+      <option value="customer"selected>Customer</option>
+    </select>
+  </div>
+  </div>
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Status</th>
+        <th>Last Acticvity</th>
+        <th>Stats</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>27</td>
+        <td> <img src="./image/user1.svg" alt="">Nicholas Gordon</td>
+        <td>ernest.mason@gmail.com</td>
+        <td><button>Active</button></td>
+        <td>2024-12-12 10:04AM</td>
+        <td>
+          <img src="./image/coment.svg" >
+          5
+          <img src="./image/userdel.svg" >
+        </td>
+      </tr>
+      <tr>
+        <td>29</td>
+        <td> <img src="./image/user2.svg" alt="">Bradley Malone</td>
+        <td>bradley.m@gmail.com</td>
+        <td><button>Pending</button></td>
+        <td>2024-12-12 10:04AM</td>
+        <td>
+          <img src="./image/coment.svg" >
+          5
+          <img src="./image/userdel.svg" >
+        </td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td> <img src="./image/user3.svg" alt="">Janie Todd</td>
+        <td>storman.hanna@yahoo.com</td>
+        <td><button>Pending</button></td>
+        <td>2024-12-12 10:04AM</td>
+        <td>
+          <img src="./image/coment.svg" >
+          5
+          <img src="./image/userdel.svg" >
+        </td>
+      </tr>
+      <tr>
+        <td>20</td>
+        <td> <img src="./image/user4.svg" alt="">Marvin Lambert</td>
+        <td>micaela.okuneva@zemlak.biz</td>
+        <td><button>Active</button></td>
+        <td>2024-12-12 10:04AM</td>
+        <td>
+          <img src="./image/coment.svg" >
+          5
+          <img src="./image/userdel.svg" >
+        </td>
+      </tr>
+      <tr>
+        <td>37</td>
+        <td> <img src="./image/user5.svg" alt="">Teresa Lloyd</td>
+        <td>carlee_erdman@gmail.com</td>
+        <td><button>Active</button></td>
+        <td>2024-12-12 10:04AM</td>
+        <td>
+          <img src="./image/coment.svg" >
+          5
+          <img src="./image/userdel.svg" >
+        </td>
+      </tr>
+      <tr>
+        <td>22</td>
+        <td> <img src="./image/user6.svg" alt="">Fred Haynes</td>
+        <td>jarod.miller@gmail.com</td>
+        <td><button>Pending</button></td>
+        <td>2024-12-12 10:04AM</td>
+        <td>
+          <img src="./image/coment.svg" >
+          5
+          <img src="./image/userdel.svg" >
+        </td>
+      </tr>
+      <tr>
+        <td>17</td>
+        <td> <img src="./image/user7.svg" alt="">Rose Peters</td>
+        <td>oma.russel@hotmail.com</td>
+        <td><button>Active</button></td>
+        <td>2024-12-12 10:04AM</td>
+        <td>
+          <img src="./image/coment.svg" >
+          5
+          <img src="./image/userdel.svg" >
+        </td>
+      </tr>
+    </tbody>
+  </table>
+   </div>
+      </div>
       <!--------------- ==================================== --------------->
       <!------------------- Reports conatainers--------------------->
       <!--------------- ==================================== --------------->

@@ -795,3 +795,57 @@ video {
   display: flex;
   justify-content: space-between;
 }
+
+/* ---========================--- */
+
+/* ---P1: Recoords Contents ---- */
+
+/* ---========================--- */
+
+[data-div="p1c2records_container"] {
+  display: flex;
+  justify-content: space-between;
+}
+
+[ data-div="p1c3records_container"] {
+  display: flex;
+}
+
+/* ---========================--- */
+
+/* ---P1:Customer Contents ---- */
+
+/* ---========================--- */
+
+[data-div="p1c1customer_container"] {
+  display: flex;
+  justify-content: space-between;
+}
+
+[data-div="p1c2customer_container"] {
+  display: flex;
+}
+
+[data-div="p1c3customer_container"] {
+  display: flex;
+  justify-content: space-between;
+}
+
+[data-div="p1c4customer_container"] {
+  display: flex;
+}
+
+/* ---========================--- */
+
+/* ---P2:Customer Contents ---- */
+
+/* ---========================--- */
+
+[data-div="p2c2customer_container"] {
+  display: flex;
+  justify-content: space-between;
+}
+
+[data-div="p2c3customer_container"] {
+  display: flex;
+}
