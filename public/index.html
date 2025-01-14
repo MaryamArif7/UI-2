@@ -85,9 +85,12 @@
       <!--------------- ==================================== --------------->
       <div id="dashboard" class="page">
         <div data-container="p1mw1_widget">
-          <p>Welcome,<span>Admin Agent !!!</span></p>
-          <p>Shunya Net Zero AI Servers Pvt Ltd</p>
+          <p data-header="p1h1_heading">Welcome,<span data-header="p1h2_heading">Admin Agent !!!</span></p>
+          <p data-header="p1h3_heading">Shunya Net Zero AI Servers Pvt Ltd</p>
         </div>
+        <!--------------- ==================================== --------------->
+      <!-------------------  Dashboard :GRID :1--------------------->
+      <!--------------- ==================================== --------------->
         <div data-container="p1mw2_widget">
           <div data-grid="p1mw2g1_grid">
             <div data-div="p1mw2g1d1_div">
@@ -134,40 +137,39 @@
                 </tr>
               </tbody>
             </table>
-            
-           
-       
-        
-                
-
-                
-            
+              
             <div data-div="p1mw2d4_div">
-              <input type="text" placeholder="Enter a Task" />
-              <button> Add Task</button>
+              <input data-input="p1mw2d4_input" type="text" placeholder="Enter a Task" />
+              <button data-button="p1mw2d4_button"> Add Task</button>
             </div>
           </div>
+
+<!--------------- ==================================== --------------->
+      <!-------------------  Dashboard :GRID:2--------------------->
+      <!--------------- ==================================== --------------->
+
+
           <div data-grid="p1mw2g1_grid">
-            Exchnage Rate
+        <h1 data-heading="p1mw2g2h1_heading">Exchange Rate</h1>
             <div data-div="p1mw2g2d1_div">
               <div data-div="p1mw2g2d2_div">
                 <div data-div="p1mw2g2d1ex1_exchnage">
-                  <input type="number" placeholder="10" />
-                  <select>
+                  <input data-input="p1mw2g2input1_input" type="text" placeholder="10" />
+                  <select data-input="p1mw2g2input1_input">
                     <option value="AED"> <img src="./image/uae.svg" />AED</option>
                     <option value="USD" selected> USD</option>
                     <option value="EUR"> EUR</option>
                   </select>
                 </div>
                 <div data-div="p1mw2g2d1ex1_exchnage">
-                  <input type="number" placeholder="2.72" />
-                  <select>
-                    <option value="AED"> <img src="./image/uae.svg" />AED</option>
-                    <option value="USD" selected> USD</option>
+                  <input data-input="p1mw2g2input1_input" type="text" placeholder="2.72" />
+                  <select data-input="p1mw2g2input1_input">
+                    <option value="AED" selected> <img src="./image/uae.svg" />AED</option>
+                    <option value="USD" > USD</option>
                     <option value="EUR"> EUR</option>
                   </select>
                 </div>
-                <button>Exchnage</button>
+                <button data-button="p1mw2g2b1_button">Exchnage</button>
               </div>
               <div data-div="p1mw2g2d3_div">
                 <img src="./image/curr.svg" />
@@ -176,121 +178,131 @@
               </div>
             </div>
             <div data-div="p1mw2g2d4_div">
-              <h1>World Clock</h1>
-              <select>
-                <option value="Africa" selected>Africa/Abidjan</option>
-                <option value="USD"> USD</option>
-                <option value="EUR"> EUR</option>
+              <h1 data-heading="p1mw2g2h5_heading">World Clock</h1>
+              <select data-dropdown="p1mw2g2d1_dropdown">
+                <option data-dropdown="p1mw2g2d1_dropdown" value="Africa" selected> Africa/Abidjan</option>
+                <option data-dropdown="p1mw2g2d1_dropdown" value="USD"> USD</option>
+                <option data-dropdown="p1mw2g2d1_dropdown" value="EUR"> EUR</option>
               </select>
-              <h1>Oct 1 Tue 16:46:21</h1>
+              <h1 data-heading="p1mw2g2h6_heading">Oct 1 Tue 16:46:21</h1>
             </div>
           </div>
+          
+<!--------------- ==================================== --------------->
+      <!-------------------  Dashboard :GRID:3--------------------->
+      <!--------------- ==================================== --------------->
           <div data-grid="p1mw2g1_grid">
             <div data-div="p1mw2g3d1_div">
-              <h1>Your bookmarked Records</h1>
-              <h1>List</h1>
-            </div>
-
-            <table>
+              <h1 data-heading="p1mw2g3h1_heading">Your Bookmarked Records</h1>
+              <h1 data-heading="p1mw2g3h2_heading">List</h1>
+            </div> 
+            <table data-table="p1mw2g3t1_table">
               <thead>
-
-                <tr>
-                  <th>Customer Name </th>
-                  <th>Ticket Name </th>
-                  <th>Subject </th>
-                  <th>Status </th>
+                <tr data-row="p1mw2g3r_row">
+                  <th data-row="p1mw2g3h_heading">Customer Name </th>
+                  <th data-row="p1mw2g3h_heading">Ticket Name </th>
+                  <th data-row="p1mw2g3h_heading">Subject </th>
+                  <th data-row="p1mw2g3h_heading">Status </th>
                 </tr>
 
               </thead>
               <tbody>
-                <tr>
-                  <td>
+                <tr data-row="p1mw2g3r1_row">
+                  <td data-row="p1mw2g3h_data">
                     Sallie Wdie
                   </td>
-                  <td>
+                  <td data-row="p1mw2g3h_data">
                     CTICKET001
                   </td>
-                  <td>What to look for</td>
-                  <td>Status</td>
+                  <td data-row="p1mw2g3h_data">What to look for</td>
+                  <td><button data-button="p1mw2g3b1_button">Active</button></td>
                 </tr>
-                <tr>
-                  <td>
+                <tr data-row="p1mw2g3r1_row">
+                  <td data-row="p1mw2g3h_data">
                     Sallie Wdie
                   </td>
-                  <td>
+                  <td data-row="p1mw2g3h_data">
                     CTICKET001
-                  </td>
-                  <td>What to look for</td>
-                  <td>Status</td>
+                  </td data-row="p1mw2g3h_data">
+                  <td data-row="p1mw2g3h_data">What to look for</td>
+                  <td><button data-button="p1mw2g3b1_button">Active</button></td>
                 </tr>
-                <tr>
-                  <td>
+                <tr data-row="p1mw2g3r1_row">
+                  <td data-row="p1mw2g3h_data">
                     Sallie Wdie
                   </td>
-                  <td>
+                  <td data-row="p1mw2g3h_data">
                     CTICKET001
                   </td>
-                  <td>What to look for</td>
-                  <td>Status</td>
+                  <td data-row="p1mw2g3h_data">What to look for</td>
+                  <td><button data-button="p1mw2g3b1_button">Active</button></td>
                 </tr>
-                <tr>
-                  <td>
+                <tr data-row="p1mw2g3r1_row">
+                  <td data-row="p1mw2g3h_data">
                     Sallie Wdie
                   </td>
-                  <td>
+                  <td data-row="p1mw2g3h_data">
                     CTICKET001
                   </td>
-                  <td>What to look for</td>
-                  <td>Status</td>
+                  <td data-row="p1mw2g3h_data">What to look for</td>
+                  <td><button data-button="p1mw2g3b1_button">Active</button></td>
                 </tr>
               </tbody>
 
             </table>
           </div>
-          <div data-grid="p1mw2g1_grid">
-            <div data-div="p1mw2g3d1_div">
-              <h1>Your overview for today</h1>
-              <h1>List</h1>
-            </div>
-            <table>
-              <thead>
-                <tr>
-                  <th>Type</th>
-                  <th></th>
-                  <th>Count</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td><img src="./image/table.svg" alt="Icon for New Records" /></td>
-                  <td> New Records</td>
-                  <td>0</td>
-                </tr>
-                <tr>
-                  <td><img src="./image/table.svg" alt="Icon for Active Records" /> </td>
-                  <td>Active Records</td>
-                  <td>5</td>
-                </tr>
-                <tr>
-                  <td><img src="./image/table.svg" alt="Icon for Closed Records" /> </td>
-                  <td>Closed Records</td>
-                  <td>8</td>
-                </tr>
-                <tr>
-                  <td><img src="./image/table2.svg" alt="Icon for Responses" /></td>
-                  <td>Responses</td>
-                  <td>0</td>
-                </tr>
-                <tr>
-                  <td><img src="./image/table2.svg" alt="Icon for Interaction" /> </td>
-                  <td>Interaction</td>
-                  <td>0</td>
-                </tr>
-              </tbody>
-            </table>
+                    
+<!--------------- ==================================== --------------->
+<!-------------------  Dashboard :GRID:4--------------------->
+<!--------------- ==================================== --------------->
+<div data-grid="p1mw2g1_grid">
+  <div data-div="p1mw2g3d1_div">
+    <h1 data-heading="p1w2mg4h1_heading">Your Overview For Today</h1>
+    <h1 data-heading="p1w2mg4h2_heading">List</h1>
+  </div>
+  <table data-table="p1w2mg4t1_table">
+    <thead>
+      <tr data-row="p1w2mg4r_row">
+        <th data-heading="p1w2mg4h3_heading">Type</th>
+        <th data-heading="p1w2mg4h3_heading">Count</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td data-row="p1w2mg4r1_row"><img data-image="p1g4im1_image" src="./image/table.svg" alt="Icon for New Records" />
+          <h2 data-heading="p1w2mg4h4_heading"> New Records</h2>
+        </td>
+        <td data-heading="p1w2mg4h4_heading">0</td>
+      </tr>
+      <tr>
+        <td data-row="p1w2mg4r1_row"><img data-image="p1g4im1_image" src="./image/table.svg" alt="Icon for Active Records" />
+          <h2 data-heading="p1w2mg4h4_heading">Active Records</h2>
+        </td>
+        <td data-heading="p1w2mg4h4_heading">5</td>
+      </tr>
+      <tr>
+        <td data-row="p1w2mg4r1_row"><img data-image="p1g4im1_image" src="./image/table.svg" alt="Icon for Closed Records" />
+          <h2 data-heading="p1w2mg4h4_heading">Closed Records</h2>
+        </td>
+        <td data-heading="p1w2mg4h4_heading">8</td>
+      </tr>
+      <tr>
+        <td data-row="p1w2mg4r1_row"><img data-image="p1g4im1_image" src="./image/table2.svg" alt="Icon for Responses" />
+          <h2 data-heading="p1w2mg4h4_heading">Responses</h2>
+        </td>
+        <td data-heading="p1w2mg4h4_heading">0</td>
+      </tr>
+      <tr>
+        <td data-row="p1w2mg4r1_row"><img data-image="p1g4im1_image" src="./image/table2.svg" alt="Icon for Interaction" />
+          <h2 data-heading="p1w2mg4h4_heading">Interactions</h2>
+        </td>
+        <td data-heading="p1w2mg4h4_heading">0</td>
+      </tr>
+    </tbody>
+  </table>
 
-          </div>
-        </div>
+</div>
+</div>
       </div>
       <!--------------- ==================================== --------------->
       <!------------------- Record conatainers--------------------->
