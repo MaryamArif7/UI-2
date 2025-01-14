@@ -117,33 +117,64 @@
     height: 280px;
     background-color: white;
 }
-/* ---========================--- */
-/* --- P1 :Grid 1  ---- ----------*/
-/* ---========================--- */
-[ data-div="p1mw2g1d1_div"]{
-  @apply flex justify-between;
+[data-row="p1g1r1_row"] {
+  @apply flex justify-between ;
 }
-[ data-div="p1mw2g1d2_div"]{
-  @apply flex justify-between;
-}
-[data-div="p1mw2d3_div"]{
-  @apply flex;
-}
-[data-task="p1mw2t1_task"]{
-  @apply flex;
-}
-[data-action="p1mw2a1"]{
-  @apply flex;
-}
-[data-div="p1mw2d4_div"]{
-  @apply flex;
-} 
 
 
+[data-div="p1mw2g1d1_div"] {
+  @apply flex justify-between mt-2;
+}
 
-[ data-div="p1mw2g2d1_div" ]{
+
+[data-row="p1g1g1row_data"] {
+  @apply flex items-center; 
+  gap: 8px; 
+}
+[data-row="p1g1r_row"]
+{
   @apply flex;
 }
+[data-row="p1g1g1row_icon"] {
+  @apply flex justify-center items-center gap-4;
+}
+
+
+[data-heading="p1mw2g1d2h3_heading"] {
+  color: #8181A5;
+  font-family: 'Lato';
+  font-weight: bold;
+  font-size: 12px;
+  @apply ml-5;
+}
+
+[data-heading="p1mw2g1d2h4_heading"] {
+  color: #8181A5;
+  font-family: 'Lato';
+  font-weight: bold;
+  font-size: 12px;
+  @apply mr-5 text-right; 
+}
+
+[data-image="p1mw2t_image"] {
+  width: 52px;
+  height: 51px;
+}
+
+
+[data-heading="p1mw2t_text"] {
+  font-family: 'Lato';
+  font-size: 12px;
+  font-weight: bold;
+}
+
+
+[data-image="p1mw2a1icon_image"] {
+  width: 58px;
+  height: 40px;
+  @apply rounded-md cursor-pointer transition-all hover:scale-105;
+}
+
   /* ---========================--- */
 /* ---P1: Recoord Contents ---- */
 /* ---========================--- */
