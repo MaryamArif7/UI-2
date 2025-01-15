@@ -714,17 +714,27 @@
             <img src="./image/plus..svg" alt="">
           </div>
         </div>
+         <!--------------- ==================================== --------------->
+      <!------------------- Reports conatainers:1st Report--------------------->
+      <!--------------- ==================================== --------------->
         <div data-grids="p1reportsgrids">
          <div data-grid="p1reportsg1" >
           <div data-div="p1c1reports1_container">
            
-            <div class="chart-container">
-              <div class="chart-header">
-                <button class="toggle active">Day</button>
-                <button class="toggle">Week</button>
-                <button class="toggle">Month</button>
+            <div data-div="p1c1recordschart_div">
+              <div data-div="p1c1reportschart_div3">
+                <h1 data-heading="p1c1reportsh1_header">
+                  Personal Reports
+                </h1>
+                <div data-div="p1c1reportschart_div2" class="chart-header">
+                  <button data-button="p1c1reports_b1" class="toggle active">Day</button>
+                  <button  data-button="p1c1reports_b2"  class="toggle">Week</button>
+                  <button  data-button="p1c1reports_b2"  class="toggle">Month</button>
+                  <img src="./image/calender.svg" />
+                </div>
               </div>
-              <div class="chart">
+            
+              <div data-chart="p1reportschart" class="chart">
                 <div data-div="chartdiv">
                   <div class="bar1" style="--height: 60%;"></div>
                   <div class="bar2" style="--height: 50%;"></div>
@@ -764,29 +774,105 @@
                 <span>13-04-2024</span>
               </div>
             </div>
-            
-              
               </div>
+                <!--------------- ==================================== --------------->
+      <!------------------- Reports conatainers:2nd Report--------------------->
+      <!--------------- ==================================== --------------->
               <div data-div="p1c1reports2_container">
-                reports 2
-              </div>
-              </div>
-              <div data-grid="p1reportsg2">
-                <div data-div="p1c1reports3_container">
-                  Reports 3
+                <div data-div="p1c1reportschart_div3">
+                  <h1 data-heading="p1c1reportsh1_header">
+                    Individual Performance
+                  </h1>
+                  <div data-div="p1c1reportschart_div2" class="chart-header">
+                    <button data-button="p1c1reports_b1" class="toggle active">Day</button>
+                    <button  data-button="p1c1reports_b2"  class="toggle">Week</button>
+                    <button  data-button="p1c1reports_b2"  class="toggle">Month</button>
+                    <img src="./image/calender.svg" />
+                  </div>
                 </div>
-                <div data-div="p1c1reports4_container">
-                  Reports 4
+                <table data-table="p1c1reportstable">
+                  <thead>
+                    <tr data-header="tableheadingrow">
+                      <th data-header="tableheading">
+                        Name
+                      </th>
+                      <th  data-header="tableheading">
+                        Responses
+                      </th>
+                      <th  data-header="tableheading">
+                        Interaction
+                      </th>
+                      <th  data-header="tableheading">
+                        open records
+                      </th>
+                      <th data-header="tableheading">
+                        closed records
+                      </th>
+                      <th  data-header="tableheading">
+                        current overall
+                      </th>
+                    </tr>
+                  <tbody>
+                    <tr>
+                      <td data-row="tabledata">
+                        <img src="./image/user1.svg" />
+                        <h1 data-header="tabledatad">Nicholas Gordon</h1>
+                      </td>
+                      <td data-header="tabledatad">
+                        0
+                      </td>
+                      <td data-header="tabledatad">
+                        0
+                      </td>
+                      <td data-header="tabledatad">0</td>
+                      <td data-header="tabledatad">0</td>
+                      <td data-header="tabledatad">
+                        <h1>Waiting Records:0</h1>
+                        <h1>Average Records:0</h1>
+                        <h1>Close Records:0</h1>
+                      </td>
+                    </tr>
+                  </tbody>
+                  </thead>
+                </table>
                 </div>
-              </div>
-              </div>
-              </div>
-              </main>
-
-
-  </div>
-  <script src="index.js"></script>
-
-</body>
-
-</html>
+                </div>
+                <!--------------- ==================================== --------------->
+                <!------------------- Reports conatainers:3rdReport--------------------->
+                <!--------------- ==================================== --------------->
+                <div data-grid="p1reportsg2">
+                  <div data-div="p1c1reports3_container">
+                    <div data-div="p1c1reports3d">
+                      <h2 data-heading="p1c1reportsheading_h1">
+                        Your Overall Stats
+                      </h2>
+                      <h2 data-heading="p1c1reportsheading_h2">Total Replies:0</h2>
+                      <h2 data-heading="p1c1reportsheading_h2">Total Interactions:0</h2>
+                      <h2 data-heading="p1c1reportsheading_h2">Total Closed:0</h2>
+                    </div>
+                  </div>
+                  <!--------------- ==================================== --------------->
+                  <!------------------- Reports conatainers:4th Report--------------------->
+                  <!--------------- ==================================== --------------->
+                  <div data-div="p1c1reports4_container">
+                    <div data-div="p1c1reports3d">
+                      <h2 data-heading="p1c1reportsheading_h1">
+                        Your Overall Stats
+                      </h2>
+                      <h2 data-heading="p1c1reportsheading_h2">Total Replies:0</h2>
+                      <h2 data-heading="p1c1reportsheading_h2">Total Interactions:0</h2>
+                      <h2 data-heading="p1c1reportsheading_h2">Total Closed:0</h2>
+                    </div>
+                  </div>
+                </div>
+                </div>
+                </div>
+                </main>
+                
+                
+                </div>
+                <script src="index.js"></script>
+                
+                </body>
+                
+                </html>
