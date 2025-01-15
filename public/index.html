@@ -429,92 +429,117 @@
       <!------------------- Records conatainers--------------------->
       <!--------------- ==================================== --------------->
       <div id="Records" class="page hidden">
-       <div data-div="p1c1records_container">
-       <div data-div="p1c2records_container">
-        <h1>Search Records </h1>
-        <div data-div="p1c3records_container">
-          <h4>SORT</h4>
-          <select>
-            <option value="Customer" selected>Customer</option>
+        <div data-div="p1c1record_container">
+          <h1 data-heading="p1c1recordh1_heading">Records</h1>
+          <h1 data-heading="p1c1recordh2_heading"> Shunya Net Zero AI Servers Pvt Ltd</h1>
+        </div>
+        <div data-div="p2c2customer_container">
+        <button data-button="p1c1recordsb1_button" >Search Records</button>
+        <div data-div="p1c4record_container">
+          <h4 data-heading="p1c4recordsh1_heading">SORT</h4>
+          <select data-heading="p1c4recordsh2_heading">
+            <option value="customer" selected>Customer</option>
+            <option value="Ticket Name">Ticket Name</option>
+            <option value="Status">Status</option>
           </select>
         </div>
-       </div>  
-        <form>
-          <label for="customer"> Customer Name</label>
-          <select>
-            <option value="customer">Select Customer</option>
-          </select>
-          <label for="Ticket">Ticket Name</label>
-          <input type="search"placeholder="please Input">
-         <label for="search">Advance Search</label>
-       
-         <button type="button"> OFF ON</button>
-         <br>
-         <label for="Date">Date</label>
-         <input type="date" placeholder="From ">
-         <input type="date" placeholder="To">
-         <label>Tag</label>
-         <select><Option value="tag" selected>Filter by Tag</Option></select>
-         <button>Reset Filters</button>
+        </div>
+       <div data-div="p1c1records_container">
+      
+        <form data-form="p1c1recordsf_form">
+          <div data-grid="p1c1records_grid">
+            <div>
+              <label data-label="p1c1recordsl1_lable" for="customer"> Customer Name</label>
+              <select data-label="p1c1recordsl1_input">
+                <option value="customer">Select Customer</option>
+              </select>
+            </div>
+            <div>
+              <label data-label="p1c1recordsl1_lable" for="Ticket">Ticket Name</label>
+              <input data-label="p1c1recordsl1_input" type="search" placeholder="please Input">
+            </div>
+        
+        
+            <div>
+              <label data-label="p1c1recordsl1_lable" for="Date">Date</label>
+              <input data-label="p1c1recordsl1_input" type="text" placeholder="From To">
+            </div>
+            <div>
+              <label data-label="p1c1recordsl1_lable">Tag</label>
+              <select data-label="p1c1recordsl1_input">
+                <Option value="tag" selected>Filter by Tag</Option>
+              </select>
+            </div>
+          </div>
+          <div data-div="p1c2div_toggle">
+            <label data-label="p1c1recordsl1_label" for="search">Advance Search</label>
+            <br>
+            <button data-button="p1c1recordsb2_button">
+              <span class="off">✔OFF</span> | <span class="on">ON</span>
+            </button>
+        
+          </div>
+        
         </form>
-        <hr>
-        <table>
+        <button data-button="p1c1recordsb3_button">Reset Filters</button>
+        <hr data-line="p1l1_line">
+        <table data-table="p1c1recordst2_table">
           <thead>
             <tr>
-              <th>Ticket Name</th>
-              <th>Record Number</th>
-              <th>Customer Name</th>
-              <th>Subject</th>
-              <th>Last Respnder</th>
-              <th>Latest Reply Date & Time</th>
-              <th>Status</th>
+              <th data-heading="p1c4recordsd1_data">Ticket Name</th>
+              <th  data-heading="p1c4recordsd1_data">Record Number</th>
+              <th  data-heading="p1c4recordsd1_data">Customer Name</th>
+              <th  data-heading="p1c4recordsd1_data">Subject</th>
+              <th  data-heading="p1c4recordsd1_data">Last Respnder</th>
+              <th  data-heading="p1c4recordsd1_data">Latest Reply Date & Time</th>
+              <th  data-heading="p1c4recordsd1_data">Status</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td>No Name Given</td>
-              <td>279</td>
-              <td>Peter Patterson</td>
-              <td>Decorate for less with art</td>
-              <td>Internel Note</td>
-              <td>2024-12-12 10:00AM</td>
-              <td><button>Closed</button></td>
+              <td  data-heading="p1c4recordsd1_data">No Name Given</td>
+              <td  data-heading="p1c4recordsd2_data">279</td>
+              <td data-heading="p1c4recordsd2_data">Peter Patterson</td>
+              <td data-heading="p1c4recordsd2_data">Decorate for less with art</td>
+              <td data-heading="p1c4recordsd2_data">Internel Note</td>
+              <td data-heading="p1c4recordsd2_data">2024-12-12 10:00AM</td>
+              <td data-heading="p1c4recordsd2_data"><button data-button="p1c4recordsb_button">Closed</button></td>
             </tr>
             <tr>
-              <td>No Name Given</td>
-              <td>279</td>
-              <td>Peter Patterson</td>
-              <td>Decorate for less with art</td>
-              <td>Internel Note</td>
-              <td>2024-12-12 10:00AM</td>
-              <td><button>Closed</button></td>
+              <td  data-heading="p1c4recordsd1_data">No Name Given</td>
+              <td data-heading="p1c4recordsd2_data">279</td>
+              <td data-heading="p1c4recordsd2_data">Peter Patterson</td>
+              <td data-heading="p1c4recordsd2_data">Decorate for less with art</td>
+              <td data-heading="p1c4recordsd2_data">Internel Note</td>
+              <td data-heading="p1c4recordsd2_data">2024-12-12 10:00AM</td>
+              <td data-heading="p1c4recordsd2_data"><button data-button="p1c4recordsb_button">Closed</button></td>
             </tr>
             <tr>
-              <td>No Name Given</td>
-              <td>279</td>
-              <td>Peter Patterson</td>
-              <td>Decorate for less with art</td>
-              <td>Internel Note</td>
-              <td>2024-12-12 10:00AM</td>
-              <td><button>Closed</button></td>
+              <td  data-heading="p1c4recordsd1_data">No Name Given</td>
+              <td data-heading="p1c4recordsd2_data">279</td>
+              <td data-heading="p1c4recordsd2_data">Peter Patterson</td>
+              <td data-heading="p1c4recordsd2_data">Decorate for less with art</td>
+              <td data-heading="p1c4recordsd2_data">Internel Note</td>
+              <td data-heading="p1c4recordsd2_data">2024-12-12 10:00AM</td>
+              <td data-heading="p1c4recordsd2_data"><button data-button="p1c4recordsb_button">Closed</button></td>
             </tr>
             <tr>
-              <td>No Name Given</td>
-              <td>278</td>
-              <td>Sallie Wade</td>
-              <td>Where to look for</td>
-              <td>Internel Note</td>
-              <td>2024-12-12 10:00AM</td>
-              <td><button>Closed</button></td>
+              <td  data-heading="p1c4recordsd1_data">No Name Given</td>
+              <td data-heading="p1c4recordsd2_data">278</td>
+              <td data-heading="p1c4recordsd2_data">Sallie Wade</td>
+              <td data-heading="p1c4recordsd2_data">Where to look for</td>
+              <td data-heading="p1c4recordsd2_data">Internel Note</td>
+              <td data-heading="p1c4recordsd2_data">2024-12-12 10:00AM</td>
+              <td data-heading="p1c4recordsd2_data"><button data-button="p1c4recordsb_button">Closed</button></td>
             </tr>
             <tr>
-              <td>No Name Given</td>
-              <td>279</td>
-              <td>Peter Patterson</td>
-              <td>Decorate for less with art</td>
-              <td>Internel Note</td>
-              <td>2024-12-12 10:00AM</td>
-              <td><button>Closed</button></td>
+              <td  data-heading="p1c4recordsd1_data">No Name Given</td>
+              <td data-heading="p1c4recordsd2_data">279</td>
+              <td data-heading="p1c4recordsd2_data">Peter Patterson</td>
+              <td data-heading="p1c4recordsd2_data">Decorate for less with art</td>
+              <td data-heading="p1c4recordsd2_data">Internel Note</td>
+              <td data-heading="p1c4recordsd2_data">2024-12-12 10:00AM</td>
+              <td data-heading="p1c4recordsd2_data"><button data-button="p1c4recordsb_button">Closed</button></td>
             </tr>
           </tbody>
         </table>
@@ -679,8 +704,84 @@
       <!--------------- ==================================== --------------->
       <!------------------- Reports conatainers--------------------->
       <!--------------- ==================================== --------------->
-      <div id="Reports" class="page hidden"></div>
-    </main>
+      <div id="Reports" class="page hidden">
+        <div data-div="p1c1recordsd_div">
+          <h1 data-heading="p1c1reportsh1_heaading">
+            Reports
+          </h1>
+          <div data-div="p1c1recordsd1_div">
+            <img width="14"src="./image/search.svg"/>
+            <img src="./image/plus..svg" alt="">
+          </div>
+        </div>
+        <div data-grids="p1reportsgrids">
+         <div data-grid="p1reportsg1" >
+          <div data-div="p1c1reports1_container">
+           
+            <div class="chart-container">
+              <div class="chart-header">
+                <button class="toggle active">Day</button>
+                <button class="toggle">Week</button>
+                <button class="toggle">Month</button>
+              </div>
+              <div class="chart">
+                <div data-div="chartdiv">
+                  <div class="bar1" style="--height: 60%;"></div>
+                  <div class="bar2" style="--height: 50%;"></div>
+                </div>
+                <div data-div="chartdiv">
+                  <div class="bar1" style="--height: 80%;"></div>
+                  <div class="bar2" style="--height: 90%;"></div>
+                </div>
+                <div data-div="chartdiv">
+                  <div class="bar1" style="--height: 80%;"></div>
+                  <div class="bar2" style="--height: 65%;"></div>
+                </div>
+                <div data-div="chartdiv">
+                  <div class="bar1" style="--height: 50%;"></div>
+                  <div class="bar2" style="--height: 40%;"></div>
+                </div>
+                <div data-div="chartdiv">
+                  <div class="bar1" style="--height: 90%;"></div>
+                  <div class="bar2" style="--height: 75%;"></div>
+                </div>
+                <div data-div="chartdiv">
+                  <div class="bar1" style="--height: 70%;"></div>
+                  <div class="bar2" style="--height: 65%;"></div>
+                </div>
+                <div data-div="chartdiv">
+                  <div class="bar1" style="--height: 70%;"></div>
+                  <div class="bar2" style="--height: 65%;"></div>
+                </div>
+              </div>
+              <div class="chart-footer">
+                <span>13-04-2024</span>
+                <span>13-04-2024</span>
+                <span>13-04-2024</span>
+                <span>13-04-2024</span>
+                <span>13-04-2024</span>
+                <span>13-04-2024</span>
+                <span>13-04-2024</span>
+              </div>
+            </div>
+            
+              
+              </div>
+              <div data-div="p1c1reports2_container">
+                reports 2
+              </div>
+              </div>
+              <div data-grid="p1reportsg2">
+                <div data-div="p1c1reports3_container">
+                  Reports 3
+                </div>
+                <div data-div="p1c1reports4_container">
+                  Reports 4
+                </div>
+              </div>
+              </div>
+              </div>
+              </main>
 
 
   </div>

@@ -5,4 +5,5 @@ function showPage(pageId) {
     const activePage = document.getElementById(pageId);
     activePage.classList.remove('hidden');
   }
+ 
   
