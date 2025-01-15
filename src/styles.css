@@ -810,6 +810,7 @@ font-weight: bold;
 [data-div="chartdiv"] {
   display: flex;
   flex-direction: row; 
+  align-items: end;
   gap: 5px;
   height: 100%; 
 }
