@@ -315,9 +315,8 @@
           </div>
           <div data-div="p1c2record_container">
             <div data-div="p1c3record_container">
-              <a href="record.html">
-                <button data-button="p1c3recordb1_button">Add Record</button>
-              </a>
+              <a href="#" onclick="showPage('AddRecord')"><button data-button="p1c3recordb1_button">Add Record</button></a>
+             
 
               <div data-div="p1c4record_container">
                 <h4 data-heading="p1c4recordsh1_heading">SORT</h4>
@@ -425,6 +424,65 @@
         </div>
 
       </div>
+           <!--------------- ==================================== --------------->
+      <!------------------- Record conatainers: 2nd page of the Records For Add Record--------------------->
+      <!--------------- ==================================== --------------->
+
+
+      <div  id="AddRecord" class="page hidden">
+        <div>
+           <button>Add Record</button>
+           <div>
+               <h2>SORT</h2>
+               <select>
+                   <option value="customer" selected>Customer</option>
+                   <option value="records">Records</option>
+               </select>
+           </div>
+           <div>
+               <h1>Creating A Record</h1>
+               <form>
+                   <label for="customer"> Select Customer</label>
+                   <select>
+                       <option>Select a customer</option>
+                       <option>Select a Ticket Number</option>
+                   </select>
+                   <br>
+                   <label for="ticket name">Ticket Name</label>
+                   <input type="text" placeholder="Ticket Name">
+                   <br>
+                   <label for="subject"> Subject</label>
+                   <input type="text " placeholder="Subject">
+                   <br>
+                   <label for="Record Details">Record Details</label>
+                   <textarea placeholder="Record Details"></textarea>
+                   <br>
+                   <input type="file" placeholder="Upload your attachment">
+                   <br>
+                   <label for="order">Order Value</label>
+                  <input type="text" placeholder="Order Value">
+                  <label for="customer"> Priority(Customer)</label>
+                  <select > 
+                   <option value="Normla" selected>Normal</option>
+                  </select>
+                   <br>
+                   <label for="Record">Tag A record</label>
+                   <input type="text" placeholder="Enter Tags(separated by comma)">
+                 
+                  <button>Create Record</button>
+               </form>
+           </div>
+        </div>
+     </div>
+
+
+
+
+
+
+
+
+
       <!--------------- ==================================== --------------->
       <!------------------- Records conatainers--------------------->
       <!--------------- ==================================== --------------->
@@ -552,46 +610,14 @@
       <!------------------- Customers conatainers--------------------->
       <!--------------- ==================================== --------------->
       <div id="Customers" class="page hidden">
-    <!------------------------------------------------
-    <div data-div="p1c1customer_container">
-          <h1>Customers</h1>
-          <div data-div="p1c2customer_container">
-            <h3>Shunya Net Zero AI Server PVt Ltd</h3>
-          </div>
-         </div>
-     <div data-div="p1c3customer_container">
-      <button>Add Customer</button>
-      <div data-div="p1c4customer_container">
-        <h3>SORT</h3>
-        <select>
-          <option  value="customer" selected>CUSTOMER</option>
-        </select>
-      </div>
-     </div>
-        <div data-div="p1c5customer_container">
-          <div data-div="p1c6customer_container">
-            <h4>Back</h4>
-            <h1>Customer Details</h1>
-          </div>
-          <div data-div="p1c7customerform_container">
-            <div data-div="p1c7customerform1_container">
-             <form>
-              <img src=""
-             </form>
-            </div>
-            <div data-div="p1c7customerform2_container">
-
-            </div>
-          </div>
-        </div>
-   -------------------------------------------- ------>  
+   
    <div data-div="p2c1customer_container">
      <div data-div="p1c1record_container">
     <h1 data-heading="p1c1recordh1_heading">Customers</h1>
     <h1 data-heading="p1c1recordh2_heading"> Shunya Net Zero AI Servers Pvt Ltd</h1>
   </div>
   <div data-div="p2c2customer_container">
-  <button data-button="p1c5b_add">+Add Customer</button>
+  <button data-button="p1c5b_add"> <a href="#" onclick="showPage('AddCustomer')">+Add Customer</a></button>
   <div data-div="p1c4record_container">
     <h4 data-heading="p1c4recordsh1_heading">SORT</h4>
     <select data-heading="p1c4recordsh2_heading">
@@ -615,7 +641,7 @@
     <tbody>
       <tr>
         <td>27</td>
-        <td data-row="p1c5_data1"> <img src="./image/user1.svg" alt=""><h1 data-heading="p1c5h2_name">Nicholas Gordon</h1></td>
+        <td data-row="p1c5_data1"> <img src="./image/user1.svg" alt=""><h1 data-heading="p1c5h2_name"> <a href="#" onclick="showPage('CustomerProfile')">Nicholas Gordon</a></h1></td>
         <td data-heading="p1c5h2_email">ernest.mason@gmail.com</td>
         <td><button data-button="p1c5b1_active">Active</button></td>
         <td data-heading="p1c5h2_time">2024-12-12 10:04AM</td>
@@ -701,6 +727,56 @@
   </table>
    </div>
       </div>
+
+            <!--------------- ==================================== --------------->
+      <!------------------- Customers conatainers:Page 2:Customer Profile--------------------->
+      <!--------------- ==================================== --------------->
+
+<div  id="CustomerProfile" class="page hidden">
+
+
+    <div data-div="p1c1customer_container">
+          <h1>Customers</h1>
+          <div data-div="p1c2customer_container">
+            <h3>Shunya Net Zero AI Server PVt Ltd</h3>
+          </div>
+         </div>
+     <div data-div="p1c3customer_container">
+      <button>Add Customer</button>
+      <div data-div="p1c4customer_container">
+        <h3>SORT</h3>
+        <select>
+          <option  value="customer" selected>CUSTOMER</option>
+        </select>
+      </div>
+     </div>
+        <div data-div="p1c5customer_container">
+          <div data-div="p1c6customer_container">
+            <h4>Back</h4>
+            <h1>Customer Details</h1>
+          </div>
+          <div data-div="p1c7customerform_container">
+            <div data-div="p1c7customerform1_container">
+             <form>
+              <img src=""
+             </form>
+            </div>
+            <div data-div="p1c7customerform2_container">
+
+            </div>
+          </div>
+        </div>
+   </div>
+ <!--------------- ==================================== --------------->
+      <!------------------- Customers conatainers:Page 2:Add Customer --------------------->
+      <!--------------- ==================================== --------------->
+<div  id="AddCustomer" class="page hidden">
+
+</div>
+
+
+
+
       <!--------------- ==================================== --------------->
       <!------------------- Reports conatainers--------------------->
       <!--------------- ==================================== --------------->
