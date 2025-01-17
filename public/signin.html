@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css">
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js">
+ </script>
+  <title>Login & Signup</title>
+</head>
+
+<body>
+  <div data-container="p1c1signup_container">
+    <div data-container="p1c1signup1_container">
+      <h1 data-heading="p1c1signuph1_heading">Welcome to our CRM</h1>
+      <h1 data-heading="p1c1signuph1_heading">Sign Up to getting started.</h1>
+      <p data-heading="p1c1signuph2_heading">Enter your details to proceed further</p>
+      <form data-form="c1f1_form" id="authForm">
+       <div data-div="p1c1div">
+        
+          <label data-label="c1l1_label" for="email">Email</label> <br>
+          <input data-input="c1i1_input" id="email" type="email"  placeholder="john.doe@gmail.com"  />
+         
+       </div>
+       <hr>
+       <div>
+        <label data-label="c1l1_label" for="password">Password</label> <br>
+        <input data-label="c1l1_label" type="password" id="password" placeholder="Start Typing Here......" required />
+       </div>
+       <hr>
+        <div data-button="divbuttons">
+          <a href="./signup.html">
+            <button data-button="c1b2_button" type="button">Sign up</button>
+          </a>
+           <button data-button="c1b1_button" type="submit">Sign in </button>
+        </div>
+        <div  data-container="p1c1signup_container4">
+          <img class="circle"  src="./image/circle.svg"/>
+          <p data-heading="p1c1signuph4_heading">I agree with terms & conditions</p>
+        </div>
+      </form>
+      <div  data-container="p1c1signup_container5">
+        <img src="./image/icons.svg" />
+        <p data-heading="p1c1signuph2_heading">Or sign in with</p>
+      </div>
+    </div>
+    <div data-container="p1c1signup_container3">
+      <img data-image="p1c1signupim1_image" src="./image/signin.svg" />
+    </div>
+  </div>
+  <script>
+    document.getElementById('authForm').addEventListener('submit', (e) => {
+      e.preventDefault();
+
+      const email = document.getElementById('email').value;
+      const password = document.getElementById('password').value;
+
+     
+      const storedEmail = localStorage.getItem('email');
+      const storedPassword = localStorage.getItem('password');
+
+      if (email === storedEmail && password === storedPassword) {
+        alert('Login Successful!');
+        window.location.href = 'index.html';  
+      } else {
+        alert('Invalid username or password');
+      }
+    });
+  </script>
+</body>
+
+</html>

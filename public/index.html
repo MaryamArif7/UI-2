@@ -430,44 +430,58 @@
 
 
       <div  id="AddRecord" class="page hidden">
-        <div>
-           <button>Add Record</button>
-           <div>
-               <h2>SORT</h2>
-               <select>
+        <div data-container="p2c1records_container">
+          <h1 data-heading="p2c1recordsh1_heading">
+            Messages
+          </h1>
+          <h1 data-heading="p2c1recordsh2_heading">
+            Shunya Net Zero AI Servers Pvt Ltd
+          </h1>
+        </div>
+        <div data-container="p2c2recordscontainer">
+            
+           <div data-container="p2c3recordscontainer">
+            <button data-button="p2c2recordscontainerb1_button"> Add Record</button>
+            <div data-container="p2c4recordscontainer">
+              <h2 data-heading="p2c1recordsh3_heading">SORT</h2>
+               <select data-heading="p2c1recordsh4_heading">
                    <option value="customer" selected>Customer</option>
                    <option value="records">Records</option>
                </select>
+            </div>
            </div>
            <div>
-               <h1>Creating A Record</h1>
-               <form>
-                   <label for="customer"> Select Customer</label>
-                   <select>
+             <div data-container="p2c5recordscontainer">
+              <h1 data-heading="p2c1recordsh5_heading">←Back to Records List</h1>
+                <h1 data-heading="p2c1recordsh6_heading">Creating A Record</h1>
+             </div>
+               <form data-form="p2recordsform">
+                   <label data-label="p2recordslabel" for="customer"> Select Customer</label>
+                   <select data-input="p2recordsinput" >
                        <option>Select a customer</option>
                        <option>Select a Ticket Number</option>
                    </select>
                    <br>
-                   <label for="ticket name">Ticket Name</label>
-                   <input type="text" placeholder="Ticket Name">
+                   <label data-label="p2recordslabel"  for="ticket name">Ticket Name</label>
+                   <input data-input="p2recordsinput"  type="text" placeholder="Ticket Name">
                    <br>
-                   <label for="subject"> Subject</label>
-                   <input type="text " placeholder="Subject">
+                   <label data-label="p2recordslabel"  for="subject"> Subject</label>
+                   <input data-input="p2recordsinput"  type="text " placeholder="Subject">
                    <br>
-                   <label for="Record Details">Record Details</label>
-                   <textarea placeholder="Record Details"></textarea>
+                   <label data-label="p2recordslabel"  for="Record Details">Record Details</label>
+                   <textarea data-input="p2recordsinput"  placeholder="Record Details"></textarea>
                    <br>
-                   <input type="file" placeholder="Upload your attachment">
+                   <input data-input="p2recordsinput"  type="file" placeholder="Upload your attachment">
                    <br>
-                   <label for="order">Order Value</label>
-                  <input type="text" placeholder="Order Value">
-                  <label for="customer"> Priority(Customer)</label>
-                  <select > 
+                   <label data-label="p2recordslabel"  for="order">Order Value</label>
+                  <input data-input="p2recordsinput"  type="text" placeholder="Order Value">
+                  <label data-label="p2recordslabel"  for="customer"> Priority(Customer)</label>
+                  <select data-input="p2recordsinput"  > 
                    <option value="Normla" selected>Normal</option>
                   </select>
                    <br>
-                   <label for="Record">Tag A record</label>
-                   <input type="text" placeholder="Enter Tags(separated by comma)">
+                   <label data-label="p2recordslabel"  for="Record">Tag A record</label>
+                   <input data-input="p2recordsinput" type="text" placeholder="Enter Tags(separated by comma)">
                  
                   <button>Create Record</button>
                </form>
