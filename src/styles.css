@@ -959,7 +959,7 @@ font-family: 'Lato';
   font-family: 'Lato';
   font-size: 14px;
   font-weight: bold;
-  @apply p-4 text-right;
+  @apply p-4 text-left;
 }
 [data-input="p2recordsinput" ]{
   font-family: 'Lato';
@@ -969,6 +969,13 @@ font-family: 'Lato';
   outline: none;
   
   @apply p-4 text-left ;
+}
+[ data-button="p2recordsb2_button"]{
+width: 166px;
+height: 36px;
+color: white;
+background-color: #1B51E5;
+@apply rounded-md ml-48 mt-3;
 }
 
 
@@ -1061,3 +1068,158 @@ border: none;
   @apply flex gap-3 items-center mt-5;
 }
 
+/*****ADD CUSTOMER:P2 *****/
+[data-container="p2addcustomer"]{
+  @apply bg-white pl-10 pt-4 mr-10;
+}
+[data-container="p2c1customerdadd"]{
+  @apply flex justify-between;
+}
+[data-container="p2c1customeradd"]{
+  @apply flex gap-3 items-center;
+}
+[data-button="p2c1customeraddbutton"]{
+  color: #5E81F4;
+  background-color: rgba(94, 129, 244, 0.1);
+  width: 150px;
+  height: 40px;
+@apply rounded-md;
+
+}
+[data-heading="p2c1customeraddb1"]{
+  font-family: 'Lato';
+  font-size: 12px;
+  font-weight: bold;
+  color: #8181A5;
+}
+[data-select="p2c1customeradd"]{
+  font-family: 'Lato';
+  font-size: 14px;
+  font-weight: bold;
+}
+[data-form="p2addcustomerf1"]{
+  @apply mt-1;
+}
+[data-image="p2addcustomerim1"]{
+  height: 72px;
+  width: 70px;
+}
+[data-container="p2c6addcustomer_c1"]{
+  @apply flex gap-24;
+}
+[data-label="p2c6label"]{
+  font-family: 'Lato';
+  font-size: 14px;
+  font-weight: bold;
+}
+[ data-input="p2c6input"]{
+  font-family: 'Lato';
+  font-size: 14px;
+  font-weight: bold;
+  width: 400px;
+  height: 15px;
+  color: #8181A5;
+  outline: none;
+  border: none;
+}
+[data-button="p2addcustomerbutton"]{
+  color: white;
+  background-color: #5E81F4;
+  width: 172px;
+  height: 40px;
+  @apply ml-96 rounded-lg mt-10;
+
+}
+[data-heading="p2addcustomerh1"]{
+  font-family: 'Lato';
+  font-size: 22px;
+  font-weight: bold;
+  @apply pt-1
+}
+/*p3:Customer Profile*/
+[data-container="p2addcustomer"]{
+  @apply bg-white pl-10 pt-4 mr-10;
+}
+[data-container="p3c1customer"]{
+  @apply flex justify-between;
+}
+[data-container="p2c1customeradd"]{
+  @apply flex gap-3 items-center;
+}
+[data-button="p2c1customeraddbutton"]{
+  color: #5E81F4;
+  background-color: rgba(94, 129, 244, 0.1);
+  width: 150px;
+  height: 40px;
+@apply rounded-md;
+
+}
+[data-heading="p2c1customeraddb1"]{
+  font-family: 'Lato';
+  font-size: 12px;
+  font-weight: bold;
+  color: #8181A5;
+}
+[data-select="p2c1customeradd"]{
+  font-family: 'Lato';
+  font-size: 14px;
+  font-weight: bold;
+}
+[data-form="p3detailscustomerf1"]{
+  @apply mt-1;
+}
+[data-image="p3detailscustomerim1"]{
+  height: 72px;
+  width: 70px;
+}
+[data-container="p3c6detailscustomer_c1"]{
+  @apply flex gap-16;
+}
+[data-label="p3c6label"]{
+  font-family: 'Lato';
+  font-size: 14px;
+  font-weight: bold;
+}
+[ data-input="p3c6input"]{
+  font-family: 'Lato';
+  font-size: 14px;
+  font-weight: bold;
+  width: 300px;
+  height: 15px;
+  color: #8181A5;
+  outline: none;
+  border: none;
+}
+[data-button="p3addcustomerbutton"]{
+  color: white;
+  background-color: #5E81F4;
+  width: 172px;
+  height: 40px;
+  @apply ml-96 rounded-lg mt-10;
+
+}
+[data-heading="p3addcustomerh1"]{
+  font-family: 'Lato';
+  font-size: 22px;
+  font-weight: bold;
+  @apply pt-1
+}
+
+[data-container="p3customerh1"]{
+  font-family: 'Lato';
+  font-size: 16px;
+  font-weight: bold; 
+}
+
+[data-container="p3customerh2"]{
+  font-family: 'Lato';
+  font-size: 16px;
+  font-weight: bold; 
+  color: #5E81F4;
+}
+[data-container="p3customerh4"]{
+  font-family: 'Lato';
+  font-size: 16px;
+  font-weight: bold; 
+  color: #8181A5;
+}

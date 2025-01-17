@@ -482,20 +482,13 @@
                    <br>
                    <label data-label="p2recordslabel"  for="Record">Tag A record</label>
                    <input data-input="p2recordsinput" type="text" placeholder="Enter Tags(separated by comma)">
-                 
-                  <button>Create Record</button>
+                    <br>
+
+                  <button data-button="p2recordsb2_button">Create Record</button>
                </form>
            </div>
         </div>
      </div>
-
-
-
-
-
-
-
-
 
       <!--------------- ==================================== --------------->
       <!------------------- Records conatainers--------------------->
@@ -747,44 +740,230 @@
       <!--------------- ==================================== --------------->
 
 <div  id="CustomerProfile" class="page hidden">
-
-
-    <div data-div="p1c1customer_container">
-          <h1>Customers</h1>
-          <div data-div="p1c2customer_container">
-            <h3>Shunya Net Zero AI Server PVt Ltd</h3>
-          </div>
-         </div>
-     <div data-div="p1c3customer_container">
-      <button>Add Customer</button>
-      <div data-div="p1c4customer_container">
-        <h3>SORT</h3>
-        <select>
-          <option  value="customer" selected>CUSTOMER</option>
+  <div data-div="p1c1record_container">
+    <h1 data-heading="p1c1recordh1_heading">Customers</h1>
+    <h1 data-heading="p1c1recordh2_heading"> Shunya Net Zero AI Servers Pvt Ltd</h1>
+  </div>
+  <div data-container="p2addcustomer">
+    <div data-container="p2c1customerdadd">
+      <button data-button="p2c1customeraddbutton">+Add Customer</button>
+      <div data-container="p2c1customeradd">
+        <h1 data-heading="p2c1customeraddb1">SORT</h1>
+        <select data-select="p2c1customeradd">
+          <option>A-Z</option>
         </select>
       </div>
      </div>
-        <div data-div="p1c5customer_container">
-          <div data-div="p1c6customer_container">
-            <h4>Back</h4>
-            <h1>Customer Details</h1>
+     <div data-container="p2c5recordscontainer">
+      <h1 data-heading="p2c1recordsh5_heading">←Back to Customers List</h1>
+        <h1 data-heading="p2c1recordsh6_heading">Customer Details</h1>
+     </div>
+    <form data-form="p3detailscustomerf1">
+      <img data-image="p3detailscustomerim1" src="./image/form.svg" />
+      <div data-container="p3c6detailscustomer">
+        <h1 data-heading="p3addcustomerh1">Basic Info</h1>
+        <div data-container="p3c6detailscustomer_c1">
+          <div  data-container="p3c6detailscustomer_c1c1">
+           <label data-label="p3c6label">First Name</label>
+           <br>
+          <input data-input="p3c6input" type="text" placeholder="Eliza" />
+          <hr>
+          <br>
+          <label data-label="p3c6label">Email</label>
+          <br>
+          <input data-input="p3c6input" type="text" placeholder="Start Typing...." />
+          <hr>
+          <br>
+          <label data-label="p3c6label">Note</label>
+          <br>
+          <input data-input="p3c6input" type="text" placeholder="Start typing...." />
+          <hr>
           </div>
-          <div data-div="p1c7customerform_container">
-            <div data-div="p1c7customerform1_container">
-             <form>
-              <img src=""
-             </form>
-            </div>
-            <div data-div="p1c7customerform2_container">
+         <div  data-container="p3c6addcustomer_c1c2">
+          <label data-label="p3c6label">Last Name</label>
+          <br>
+          <input data-input="p3c6input" type="text" placeholder="Gray" />
+          <hr>
+          <br>
+          <label data-label="p3c6label">Job Title</label>
+          <br>
+          <input data-input="p3c6input" type="text" placeholder="Developer" />
+          <hr>
+          <br>
+          <label data-label="p3c6label">Status</label> 
+          <br>
+          <input data-input="p3c6input" type="checkbox"  />
+          <hr>
+         </div>
+         <div  data-container="p3c6addcustomer_c1c3">
+        <img src="./image/form.svg" />
+        <h1 data-container="p3customerh1">
+          Eliza Gray
+        </h1>
+        <h1 data-container="p3customerh2">Customer@gmail.com</h1>
+        <h1 data-container="p3customerh1">Support records</h1>
+        <h1 data-container="p3customerh4">Testing New Ticket</h1>
+         </div>
 
+      </div>
+      </div>
+      <div data-container="p3c7addcustomer">
+        <div data-container="p3c6addcustomer">
+          <h1 data-heading="p3addcustomerh1">Address Info</h1>
+          <div data-container="p3c6detailscustomer_c1">
+            <div  data-container="p3c6addcustomer_c1c1">
+             <label data-label="p3c6label">Address line 1</label>
+             <br>
+            <input data-input="p3c6input" type="text" placeholder="Address line 1" />
+            <hr>
+            <br>
+            <label data-label="p3c6label">City</label>
+            <br>
+            <input data-input="p3c6input" type="text" placeholder="City" />
+            <hr>
+            <br>
+            <label data-label="p3c6label">Zip Code</label>
+            <br>
+            <input data-input="p3c6input" type="text" placeholder="Zip Code" />
+            <hr>
             </div>
-          </div>
+           <div  data-container="p3c6addcustomer_c1c2">
+            <label data-label="p3c6label">Address line 2</label>
+            <br>
+            <input data-input="p3c6input" type="text" placeholder="Address line 2" />
+            <hr>
+            <br>
+            <label data-label="p3c6label">State</label>
+            <br>
+            <input data-input="p3c6input" type="text" placeholder="State" />
+            <hr>
+            <br>
+            <label data-label="p3c6label">Country</label> 
+            <br>
+            <input data-input="p3c6input" type="text" placeholder="Country" />
+            <hr>
+           </div>
+            
+     
         </div>
+        </div>
+      </div>
+      <button data-button="p2addcustomerbutton">
+        Add Customer
+      </button>
+    </form>
+  </div>
+
    </div>
  <!--------------- ==================================== --------------->
       <!------------------- Customers conatainers:Page 2:Add Customer --------------------->
       <!--------------- ==================================== --------------->
 <div  id="AddCustomer" class="page hidden">
+  <div data-div="p1c1record_container">
+    <h1 data-heading="p1c1recordh1_heading">Customers</h1>
+    <h1 data-heading="p1c1recordh2_heading"> Shunya Net Zero AI Servers Pvt Ltd</h1>
+  </div>
+  <div data-container="p2addcustomer">
+    <div data-container="p2c1customerdadd">
+      <button data-button="p2c1customeraddbutton">+Add Customer</button>
+      <div data-container="p2c1customeradd">
+        <h1 data-heading="p2c1customeraddb1">SORT</h1>
+        <select data-select="p2c1customeradd">
+          <option>A-Z</option>
+        </select>
+      </div>
+     </div>
+     <div data-container="p2c5recordscontainer">
+      <h1 data-heading="p2c1recordsh5_heading">←Back to Customers List</h1>
+        <h1 data-heading="p2c1recordsh6_heading">Creating A Customer</h1>
+     </div>
+    <form data-form="p2addcustomerf1">
+      <img data-image="p2addcustomerim1" src="./image/form.svg" />
+      <div data-container="p2c6addcustomer">
+        <h1 data-heading="p2addcustomerh1">Basic Info</h1>
+        <div data-container="p2c6addcustomer_c1">
+          <div  data-container="p2c6addcustomer_c1c1">
+           <label data-label="p2c6label">First Name</label>
+           <br>
+          <input data-input="p2c6input" type="text" placeholder="Name" />
+          <hr>
+          <br>
+          <label data-label="p2c6label">Email</label>
+          <br>
+          <input data-input="p2c6input" type="text" placeholder="Start Typing" />
+          <hr>
+          <br>
+          <label data-label="p2c6label">Note</label>
+          <br>
+          <input data-input="p2c6input" type="text" placeholder="Start typing...." />
+          <hr>
+          </div>
+         <div  data-container="p2c6addcustomer_c1c2">
+          <label data-label="p2c6label">Last Name</label>
+          <br>
+          <input data-input="p2c6input" type="text" placeholder="Last Name" />
+          <hr>
+          <br>
+          <label data-label="p2c6label">Job Title</label>
+          <br>
+          <input data-input="p2c6input" type="text" placeholder="Title" />
+          <hr>
+          <br>
+          <label data-label="p2c6label">Status</label> 
+          <br>
+          <input data-input="p2c6input" type="checkbox" placeholder="Country" />
+          <hr>
+         </div>
+      </div>
+      </div>
+      <div data-container="p2c7addcustomer">
+        <div data-container="p2c6addcustomer">
+          <h1 data-heading="p2addcustomerh1">Address Info</h1>
+          <div data-container="p2c6addcustomer_c1">
+            <div  data-container="p2c6addcustomer_c1c1">
+             <label data-label="p2c6label">Address line 1</label>
+             <br>
+            <input data-input="p2c6input" type="text" placeholder="Address line 1" />
+            <hr>
+            <br>
+            <label data-label="p2c6label">City</label>
+            <br>
+            <input data-input="p2c6input" type="text" placeholder="City" />
+            <hr>
+            <br>
+            <label data-label="p2c6label">Zip Code</label>
+            <br>
+            <input data-input="p2c6input" type="text" placeholder="Zip Code" />
+            <hr>
+            </div>
+           <div  data-container="p2c6addcustomer_c1c2">
+            <label data-label="p2c6label">Address Line 2</label>
+            <br>
+            <input data-input="p2c6input" type="text" placeholder="Address line 2" />
+            <hr>
+            <br>
+            <label data-label="p2c6label">State</label>
+            <br>
+            <input data-input="p2c6input" type="text" placeholder="State" />
+            <hr>
+            <br>
+            <label data-label="p2c6label">Country</label> 
+            <br>
+            <input data-input="p2c6input" type="text" placeholder="Country" />
+            <hr>
+           </div>
+            
+     
+        </div>
+        </div>
+      </div>
+      <button data-button="p2addcustomerbutton">
+        Add Customer
+      </button>
+    </form>
+  </div>
+
+
 
 </div>
 
